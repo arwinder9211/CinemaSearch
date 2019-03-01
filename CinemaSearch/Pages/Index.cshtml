@@ -1,0 +1,25 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<hr />
+<br />
+<h1>SEARCH A MOVIE</h1>
+<h5> </h5>
+<form method="get" action="/Movie" border="4" cellpadding="0" cellspacing="0" style="width:100%;float:right">
+    <div class="input-group">
+        <input type="text" name="id" class="form-control" placeholder=""/>
+        <input type="submit" value="Go" class="btn btn-primary" style="background:red;position:center" />
+    </div>
+</form>
+
+<style>
+    body {
+        background-image: url('Images/moviebg.jpeg');
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+</style>

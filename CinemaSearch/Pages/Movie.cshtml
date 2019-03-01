@@ -1,0 +1,107 @@
+﻿@page
+@model MovieModel
+@{
+}
+
+<style>
+    #card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        align-self: center;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 44px 0 rgba(0,0,0,0.2);
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
+</style>
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 5px; /* 5px rounded corners */
+    }
+
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+</style>
+
+<style>
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+</style>
+
+
+<style>
+    #cardinfo {
+        align-self: center;
+    }
+    
+
+    .container {
+        padding: 2px 16px;
+    }
+</style>
+
+<style>
+
+    img {
+        border-radius: 5px 5px 0 0;
+    }
+</style>
+
+<style>
+    .cardinfo {
+        max-width: 300px;
+        margin: auto;
+        text-align: center;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 22px;
+        color: black;
+    }
+</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="card" style="width:600px;height:450px;width:50%;position:absolute">
+    <img src=@Model.MoviePosterImage>
+</div>
+
+<div class="cardinfo" style="width:600px;height:300px;width:50%;position:center">
+    <br />
+    <h4>@Model.MovieTitle</h4>
+    <a>Rating: @Model.MovieRating/10</a>
+    </br>
+    <a>Release Date: @Model.MovieReleaseDate</a>
+    <a>Language: @Model.MovieLanguage</a>
+    <hr />
+    <a>Bio: @Model.MovieBio</a>
+</div>
+
+
+<style>
+    body {
+        background-image: url('Images/moviebg.jpeg');
+        font-size: 12pt;
+        margin: 0;
+        padding: 0;
+    }
+</style>
